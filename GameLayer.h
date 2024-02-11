@@ -31,6 +31,12 @@ static const char* _mapTiles =
 class GameLayer : public Layer{
 public:
 	GameLayer() : Layer("Game Layer"), _cameraController(1280.0f / 720.0f){
+
+    }
+
+	virtual ~GameLayer() = default;
+
+	virtual void onAttach() override{
         // texture1 = Texture2D::Create("assets/Checkerboard.png");
         spriteSheets = Texture2D::Create("assets/textures/RPGpack_sheet_2X.png");
         stairsTexture = SubTexture2D::createFromCoords(spriteSheets, {0, 11}, {128, 128});
@@ -46,11 +52,8 @@ public:
         _particle.pos = { 0.0f, 0.0f };
 
         _cameraController.setZoomLevel(5.0f);
-    }
-
-	virtual ~GameLayer() = default;
-
-	virtual void onAttach() override{}
+		
+	}
 
 	virtual void onDetach() override{}
 
@@ -108,9 +111,9 @@ public:
             }
         }
 
-        /* Renderer2D::drawQuad({0.0f, 0.0f, 0.5f}, {1.0f, 1.0f}, _textureStairs); // stairs texture shape */
-        /* Renderer2D::drawQuad({1.0f, 0.0f, 0.5f}, {1.0f, 1.0f}, _textureBarrel); // barrel texture shape */
-        /* Renderer2D::drawQuad({-1.0f, 0.0f, 0.5f}, {1.0f, 2.0f}, _textureTree); //  tree texture shape */
+        Renderer2D::drawQuad({0.0f, 0.0f, 0.5f}, {1.0f, 1.0f}, stairsTexture); // stairs texture shape
+        Renderer2D::drawQuad({1.0f, 0.0f, 0.5f}, {1.0f, 1.0f}, treeTexture); // barrel texture shape
+        Renderer2D::drawQuad({-1.0f, 0.0f, 0.5f}, {1.0f, 2.0f}, grassTexture); //  tree texture shape
 
         Renderer2D::endScene();
     }
@@ -118,6 +121,7 @@ public:
 	virtual void onEvent(Event& e) override{
         EventDispatcher dispatch(e);
         dispatch.Dispatch<WindowCloseEvent>(bind_function(this, &GameLayer::onWindowClose));
+		_cameraController.onEvent(e);
     }
 
 private:

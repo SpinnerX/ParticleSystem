@@ -1,8 +1,11 @@
 cmake_minimum_required (VERSION 3.15)
 
-set(PROJECT_NAME Sandbox)
+set(PROJECT_NAME ParticleSystem)
 set(CMAKE_CXX_STANDARD 20)
+# set(CMAKE_CXX_FLAGS "-std=c++20 -fsanitize=address")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "") # works (in creating the compile_commands.json file)
 project(${PROJECT_NAME})
+
 include(cmake/modules.cmake)
 find_package(GameEngine REQUIRED)
 

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/aaronher/Desktop/ParticleSystem/Debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/lib -isystem /usr/local/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks  -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang /Users/aaronher/Desktop/ParticleSystem/Debug/CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx -x c++-header -o CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx.pch -c /Users/aaronher/Desktop/ParticleSystem/Debug/CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx.cxx",
+  "file": "/Users/aaronher/Desktop/ParticleSystem/Debug/CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx.cxx",
+  "output": "CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx.pch"
+},
+{
+  "directory": "/Users/aaronher/Desktop/ParticleSystem/Debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/lib -isystem /usr/local/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks  -Winvalid-pch -Xarch_arm64 -include/Users/aaronher/Desktop/ParticleSystem/Debug/CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx -o CMakeFiles/ParticleSystem.dir/main.cpp.o -c /Users/aaronher/Desktop/ParticleSystem/main.cpp",
+  "file": "/Users/aaronher/Desktop/ParticleSystem/main.cpp",
+  "output": "CMakeFiles/ParticleSystem.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/aaronher/Desktop/ParticleSystem/Debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/lib -isystem /usr/local/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks  -Winvalid-pch -Xarch_arm64 -include/Users/aaronher/Desktop/ParticleSystem/Debug/CMakeFiles/ParticleSystem.dir/cmake_pch_arm64.hxx -o CMakeFiles/ParticleSystem.dir/ParticleSystem.cpp.o -c /Users/aaronher/Desktop/ParticleSystem/ParticleSystem.cpp",
+  "file": "/Users/aaronher/Desktop/ParticleSystem/ParticleSystem.cpp",
+  "output": "CMakeFiles/ParticleSystem.dir/ParticleSystem.cpp.o"
+}
+]
